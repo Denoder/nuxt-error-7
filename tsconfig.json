@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "types": [
+      "@nuxt/types",
+      "@nuxtjs/i18n",
+      "@pinia/nuxt",
+      "@types/node"
+    ]
+  },
+  // https://v3.nuxtjs.org/concepts/typescript
+  "extends": "./.nuxt/tsconfig.json",
+  "include": [
+    "interfaces"
+  ]
+}

@@ -1,0 +1,191 @@
+/* .fade-enter-active,
+.fade-leave-active {
+  transition-duration: 3s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}
+.fade-enter,
+.fade-leave-active {
+  opacity: 0
+} */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+::selection {
+  background: #797878;
+  color: #fff;
+  text-shadow: none;
+}
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #333333;
+  font-size: 12px;
+  min-width: 480px;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+body,
+html {
+  height: 100%;
+  font-family: "Open Sans",HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+article,
+aside,
+audio,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+video {
+  display: block;
+}
+article,
+aside,
+audio,
+body,
+canvas,
+details,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+img,
+li,
+menu,
+nav,
+ol,
+p,
+section,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr,
+ul,
+video {
+  margin: 0;
+  padding: 0;
+}
+article:empty,
+aside:empty,
+div:empty,
+footer:empty,
+header:empty,
+section:empty,
+span:empty {
+  border: 0!important;
+  margin: 0!important;
+  padding: 0!important;
+}
+ol,
+ul {
+  list-style: none;
+}
+ol,
+p,
+ul {
+  line-height: 14px;
+}
+p {
+  font-size: 16px;
+}
+label {
+  cursor: pointer;
+  display: inline-block;
+  max-width: 100%;
+  font-weight: normal;
+}
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  outline: none;
+}
+button,
+input,
+select,
+textarea {
+  color: #cccccc;
+  display: inline-block;
+  font-size: 100%;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  vertical-align: middle;
+  -webkit-font-smoothing: antialiased;
+}
+input,
+button,
+select,
+textarea {
+  font-size: inherit;
+  line-height: inherit;
+}
+input {
+  line-height: normal;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+a {
+  text-decoration: none;
+  outline: 0;
+  cursor: pointer;
+}
+a,
+a:hover,
+a:focus,
+a.dotted:hover,
+a:visited:hover,
+.link:hover,
+.link:visited:hover,
+.blacklink:hover,
+.blacklink:visited:hover {
+  text-decoration: none;
+  color: #0077CC;
+  cursor: pointer;
+}
+a img {
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
