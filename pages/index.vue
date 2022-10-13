@@ -3,15 +3,24 @@
     <div
       v-for="item in list.data"
       :key='item.id'
-    >
-     {{ item.item }} [ok]
+    > 
+      <nuxt-link
+        :to="{ name: 'test-slug', params: { slug: [item.item] } }"
+      >
+       {{ item.item }}
+      </nuxt-link>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { definePageMeta } from '#imports'
-import { computed, onMounted, onUnmounted, ref } from 'vue'
+import {
+  computed,
+  //onMounted,
+  onUnmounted,
+  ref
+} from 'vue'
 
 import { useListStore } from '~/store/list.store'
 
@@ -35,13 +44,13 @@ const update = (): Promise<void> => {
   })
 }
 
-onMounted (async () => {
+// onMounted (async () => {
   await listStore.initiateList({
     element: 'test',
   })
 
   update()
-})
+// })
 </script>
 
 <style>
