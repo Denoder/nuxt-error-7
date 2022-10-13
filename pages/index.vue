@@ -3,11 +3,11 @@
     <div
       v-for="item in list.data"
       :key='item.id'
-    > 
+    >
       <nuxt-link
         :to="{ name: 'test-slug', params: { slug: [item.item] } }"
       >
-       {{ item.item }}
+       {{ item.item }} [ok]
       </nuxt-link>
     </div>
   </div>
@@ -38,8 +38,8 @@ const list = computed<IList>(() => {
   }
 })
 
-const update = (): Promise<void> => {
-  listStore.updateList({
+const update = async (): Promise<void> => {
+  await listStore.updateList({
     element: 'test'
   })
 }
@@ -49,7 +49,7 @@ const update = (): Promise<void> => {
     element: 'test',
   })
 
-  update()
+  await update()
 // })
 </script>
 

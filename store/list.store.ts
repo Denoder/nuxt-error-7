@@ -8,7 +8,6 @@ import { computed, ref } from 'vue'
 
 import { useHttpClient } from '~/composables/http-client.composable'
 
-
 interface IStoreData {
   [key: string]: {
     items: Array<any>,
@@ -30,14 +29,14 @@ export const useListStore = defineStore('list', () => {
     }
   }
 
-  const updateList = (payload) => {
-    const uri = data.value[payload.element].uri
-    useAsyncData(payload.element, () => 
+  const updateList = async (payload) => {
+    await useAsyncData(payload.element, () => 
       $http.$get({
-        url: `/api/list`
+        method: 'get',
+        url: `/api/list`,
       })
     )
-      .then((res: any) => {
+      .then((res: any) => {console.log(res)
         data.value[payload.element]['items'] = res.data.value.items
       })
       .catch((error: any) => {
@@ -52,3 +51,4 @@ export const useListStore = defineStore('list', () => {
     updateList
   }
 })
+

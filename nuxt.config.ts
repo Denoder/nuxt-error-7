@@ -153,6 +153,8 @@ export default defineNuxtConfig({
     // "@nuxtjs/i18n",
     '@nuxtjs-alt/auth',
     '@nuxtjs-alt/http',
+    // '~/modules/auth/dist/module',
+    // '~/modules/http/dist/module',
     '@nuxt/image-edge',
     '@pinia/nuxt'
   ],
